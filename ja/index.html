@@ -289,6 +289,9 @@
     "author": { "@type": "Organization", "name": "CodiCheck" }
   }
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kukudev.com/#org","name":"kukuDev","url":"https://kukudev.com/"},{"@type":"WebSite","name":"CodiCheck","url":"https://codicheck.kukudev.com/","inLanguage":"ja","publisher":{"@id":"https://kukudev.com/#org"}}]}
+  </script>
 </head>
 <body>
 
@@ -541,6 +544,65 @@
   </div>
 </section>
 
+<style>
+  .faq { padding: 120px 0; background: #0d0d0d; }
+  .faq-inner { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+  .faq-head { text-align: center; margin-bottom: 48px; }
+  .faq-head .section-tag { margin-left: auto; margin-right: auto; }
+  .faq-list { display: flex; flex-direction: column; gap: 12px; }
+  .faq-item { background: #1a1a1a; border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 0 22px; }
+  .faq-item summary { list-style: none; cursor: pointer; font-size: 17.5px; font-weight: 700; color: #f5f5f7; padding: 21px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-chevron { flex: 0 0 auto; font-size: 22px; color: #3A86FF; transition: transform .3s ease; }
+  .faq-item[open] .faq-chevron { transform: rotate(180deg); }
+  .faq-a { padding: 0 0 22px; margin: 0; color: #9a9aa2; font-size: 15.5px; line-height: 1.75; }
+  @media (max-width: 640px) {
+    .faq { padding: 72px 0; }
+    .faq-inner { padding: 0 18px; }
+    .faq-item summary { font-size: 16px; padding: 18px 0; }
+    .faq-a { font-size: 14.5px; }
+  }
+</style>
+
+<!-- ─── FAQ ─── -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head" data-animate>
+      <span class="section-tag">よくある質問</span>
+      <h2 class="section-title"><span class="hi">よくある</span>ご質問</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" data-animate>
+        <summary>コディチェック（CodiCheck）はどんなアプリですか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">コディチェックは、AIの幼なじみ「セア」があなたの着こなし写真をTPO（シーン）に基づいて率直に評価してくれるAIコーデ評価アプリです。Gemini AIでTPOへの合致度・体型・色の組み合わせ・フィットを分析し、点数と詳しいフィードバック、改善アドバイス、さらにおすすめのショッピングリンクまで提案します。Androidで利用できます。</p>
+      </details>
+      <details class="faq-item" data-animate>
+        <summary>コディチェックはどうやって使いますか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">今日のコーデ写真を撮るかギャラリーから選び、どんなシーンで着るかTPOを設定して送るだけです。するとセアがAIでコーデを分析し、点数と率直なフィードバック、具体的な改善アドバイス、ショッピングリンクを届けます。</p>
+      </details>
+      <details class="faq-item" data-animate>
+        <summary>コディチェックは無料ですか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">インストールは無料です。アプリ内には有料のコーデ利用券などのアプリ内課金があり、AI修正着こなし画像などの一部機能で使用します。</p>
+      </details>
+      <details class="faq-item" data-animate>
+        <summary>TPOとは何で、なぜ重要なのですか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">TPOはTime（時間）・Place（場所）・Occasion（場面）を意味します。デートや面接、旅行など、その場にふさわしいコーデかどうかが大切なので、コディチェックでは14種類のTPOカテゴリーから選ぶと、その状況に最適化された評価を受けられます。</p>
+      </details>
+      <details class="faq-item" data-animate>
+        <summary>AIが修正した着こなし画像はどうすれば受け取れますか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">有料のコーデ利用券を使って受けた評価が3.0点未満のとき、セアのアドバイスどおりに修正された着こなし画像も一緒に受け取れます。言葉だけの説明ではなく、改善後の姿を画像で直接確認できます。</p>
+      </details>
+      <details class="faq-item" data-animate>
+        <summary>どの端末で使えますか？<iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron"></iconify-icon></summary>
+        <p class="faq-a">コディチェックは現在Android専用アプリで、Google Playからダウンロードして利用できます。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"コディチェック（CodiCheck）はどんなアプリですか？","acceptedAnswer":{"@type":"Answer","text":"コディチェックは、AIの幼なじみ「セア」があなたの着こなし写真をTPO（シーン）に基づいて率直に評価してくれるAIコーデ評価アプリです。Gemini AIでTPOへの合致度・体型・色の組み合わせ・フィットを分析し、点数と詳しいフィードバック、改善アドバイス、さらにおすすめのショッピングリンクまで提案します。Androidで利用できます。"}},{"@type":"Question","name":"コディチェックはどうやって使いますか？","acceptedAnswer":{"@type":"Answer","text":"今日のコーデ写真を撮るかギャラリーから選び、どんなシーンで着るかTPOを設定して送るだけです。するとセアがAIでコーデを分析し、点数と率直なフィードバック、具体的な改善アドバイス、ショッピングリンクを届けます。"}},{"@type":"Question","name":"コディチェックは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"インストールは無料です。アプリ内には有料のコーデ利用券などのアプリ内課金があり、AI修正着こなし画像などの一部機能で使用します。"}},{"@type":"Question","name":"TPOとは何で、なぜ重要なのですか？","acceptedAnswer":{"@type":"Answer","text":"TPOはTime（時間）・Place（場所）・Occasion（場面）を意味します。デートや面接、旅行など、その場にふさわしいコーデかどうかが大切なので、コディチェックでは14種類のTPOカテゴリーから選ぶと、その状況に最適化された評価を受けられます。"}},{"@type":"Question","name":"AIが修正した着こなし画像はどうすれば受け取れますか？","acceptedAnswer":{"@type":"Answer","text":"有料のコーデ利用券を使って受けた評価が3.0点未満のとき、セアのアドバイスどおりに修正された着こなし画像も一緒に受け取れます。言葉だけの説明ではなく、改善後の姿を画像で直接確認できます。"}},{"@type":"Question","name":"どの端末で使えますか？","acceptedAnswer":{"@type":"Answer","text":"コディチェックは現在Android専用アプリで、Google Playからダウンロードして利用できます。"}}]}
+  </script>
 <div class="cta-outer" id="download">
   <div class="cta-card" data-animate>
     <div class="cta-content">
